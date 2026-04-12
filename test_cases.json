@@ -1,0 +1,72 @@
+[
+  {
+    "test_case_id": "TC-001",
+    "requirement_id": "REQ-117.130-001A",
+    "description": "Verify that: Conduct hazard analysis.",
+    "input_data": "CFR section 21 CFR 117.130 compliance data",
+    "expected_output": "Requirement REQ-117.130-001A is satisfied"
+  },
+  {
+    "test_case_id": "TC-002",
+    "requirement_id": "REQ-117.130-001B",
+    "description": "Verify that: Identify known hazards.",
+    "input_data": "CFR section 21 CFR 117.130 compliance data",
+    "expected_output": "Requirement REQ-117.130-001B is satisfied"
+  },
+  {
+    "test_case_id": "TC-003",
+    "requirement_id": "REQ-117.130-001C",
+    "description": "Verify that: Identify reasonably foreseeable hazards.",
+    "input_data": "CFR section 21 CFR 117.130 compliance data",
+    "expected_output": "Requirement REQ-117.130-001C is satisfied"
+  },
+  {
+    "test_case_id": "TC-004",
+    "requirement_id": "REQ-117.130-001D",
+    "description": "Verify that: Evaluate hazards using data, experience, reports.",
+    "input_data": "CFR section 21 CFR 117.130 compliance data",
+    "expected_output": "Requirement REQ-117.130-001D is satisfied"
+  },
+  {
+    "test_case_id": "TC-005",
+    "requirement_id": "REQ-117.130-001E",
+    "description": "Verify that: Determine hazards requiring preventive controls.",
+    "input_data": "CFR section 21 CFR 117.130 compliance data",
+    "expected_output": "Requirement REQ-117.130-001E is satisfied"
+  },
+  {
+    "test_case_id": "TC-006",
+    "requirement_id": "REQ-117.130-001F",
+    "description": "Verify that: Hazard analysis must be written.",
+    "input_data": "CFR section 21 CFR 117.130 compliance data",
+    "expected_output": "Requirement REQ-117.130-001F is satisfied"
+  },
+  {
+    "test_case_id": "TC-007",
+    "requirement_id": "REQ-117.130-002A",
+    "description": "Verify that: Biological hazards.",
+    "input_data": "CFR section 21 CFR 117.130 compliance data",
+    "expected_output": "Requirement REQ-117.130-002A is satisfied"
+  },
+  {
+    "test_case_id": "TC-008",
+    "requirement_id": "REQ-117.130-002B",
+    "description": "Verify that: Chemical hazards.",
+    "input_data": "CFR section 21 CFR 117.130 compliance data",
+    "expected_output": "Requirement REQ-117.130-002B is satisfied"
+  },
+  {
+    "test_case_id": "TC-009",
+    "requirement_id": "REQ-117.130-002C",
+    "description": "Verify that: Physical hazards.",
+    "input_data": "CFR section 21 CFR 117.130 compliance data",
+    "expected_output": "Requirement REQ-117.130-002C is satisfied"
+  },
+  {
+    "test_case_id": "TC-010",
+    "requirement_id": "REQ-117.130-002D",
+    "description": "Verify that: Occur naturally.",
+    "input_data": "CFR section 21 CFR 117.130 compliance data",
+    "expected_output": "Requirement REQ-117.130-002D is satisfied"
+  }
+]
