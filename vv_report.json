@@ -1,0 +1,130 @@
+{
+  "generated_at": "2026-04-16T21:03:10.033716+00:00",
+  "summary": {
+    "verification_passed": true,
+    "validation_passed": true,
+    "overall_passed": true
+  },
+  "verification": {
+    "selected_requirements": {
+      "selected_requirement_count": 10,
+      "expected_selected_requirement_count": 10,
+      "count_matches_expected": true,
+      "duplicate_selected_requirement_ids": [],
+      "missing_selected_requirement_ids": [],
+      "invalid_structure_entries": [],
+      "passed": true
+    },
+    "test_case_integrity": {
+      "generated_test_case_count": 10,
+      "expected_test_case_count": 10,
+      "count_matches_selected_rules": true,
+      "duplicate_test_case_ids": [],
+      "missing_required_fields": [],
+      "missing_test_cases_for_requirements": [],
+      "unexpected_test_cases": [],
+      "multiple_test_cases_for_same_requirement": {},
+      "passed": true
+    }
+  },
+  "validation": {
+    "checked_test_cases": 10,
+    "failed_cases": [],
+    "per_test_case": [
+      {
+        "test_case_id": "TC-001",
+        "requirement_id": "REQ-117.130-001A",
+        "description_matches_requirement": true,
+        "expected_output_mentions_requirement": true,
+        "input_data_looks_relevant": true,
+        "passed": true
+      },
+      {
+        "test_case_id": "TC-002",
+        "requirement_id": "REQ-117.130-001B",
+        "description_matches_requirement": true,
+        "expected_output_mentions_requirement": true,
+        "input_data_looks_relevant": true,
+        "passed": true
+      },
+      {
+        "test_case_id": "TC-003",
+        "requirement_id": "REQ-117.130-001C",
+        "description_matches_requirement": true,
+        "expected_output_mentions_requirement": true,
+        "input_data_looks_relevant": true,
+        "passed": true
+      },
+      {
+        "test_case_id": "TC-004",
+        "requirement_id": "REQ-117.130-001D",
+        "description_matches_requirement": true,
+        "expected_output_mentions_requirement": true,
+        "input_data_looks_relevant": true,
+        "passed": true
+      },
+      {
+        "test_case_id": "TC-005",
+        "requirement_id": "REQ-117.130-001E",
+        "description_matches_requirement": true,
+        "expected_output_mentions_requirement": true,
+        "input_data_looks_relevant": true,
+        "passed": true
+      },
+      {
+        "test_case_id": "TC-006",
+        "requirement_id": "REQ-117.130-001F",
+        "description_matches_requirement": true,
+        "expected_output_mentions_requirement": true,
+        "input_data_looks_relevant": true,
+        "passed": true
+      },
+      {
+        "test_case_id": "TC-007",
+        "requirement_id": "REQ-117.130-002A",
+        "description_matches_requirement": true,
+        "expected_output_mentions_requirement": true,
+        "input_data_looks_relevant": true,
+        "passed": true
+      },
+      {
+        "test_case_id": "TC-008",
+        "requirement_id": "REQ-117.130-002B",
+        "description_matches_requirement": true,
+        "expected_output_mentions_requirement": true,
+        "input_data_looks_relevant": true,
+        "passed": true
+      },
+      {
+        "test_case_id": "TC-009",
+        "requirement_id": "REQ-117.130-002C",
+        "description_matches_requirement": true,
+        "expected_output_mentions_requirement": true,
+        "input_data_looks_relevant": true,
+        "passed": true
+      },
+      {
+        "test_case_id": "TC-010",
+        "requirement_id": "REQ-117.130-002D",
+        "description_matches_requirement": true,
+        "expected_output_mentions_requirement": true,
+        "input_data_looks_relevant": true,
+        "passed": true
+      }
+    ],
+    "passed": true,
+    "note": "Validation is heuristic-based. It checks whether each test case text still lines up with the selected requirement."
+  },
+  "forensick_integration": {
+    "logged_methods": [
+      "configure_logging",
+      "load_json",
+      "build_requirement_lookup",
+      "verify_selected_requirements",
+      "verify_test_case_completeness",
+      "validate_test_case_alignment",
+      "write_report"
+    ],
+    "log_file": "forensic.log"
+  }
+}
