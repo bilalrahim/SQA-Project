@@ -1,0 +1,65 @@
+name: V&V Pipeline
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  verify-and-validate:
+    name: Verification, Validation & Forensic Logging
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install --upgrade pip
+
+      # Task 1: generate requirements
+      - name: Generate requirements.json
+        run: |
+          python scripts/generate_requirements.py \
+            -i "Input CFR File/CFR-117.130.md" \
+            -o requirements.json \
+            -c "21 CFR 117.130" \
+            -s expected_structure.json \
+            -p 10
+
+      # Task 2: generate test cases
+      - name: Generate test_cases.json
+        run: |
+          python scripts/generate_test_cases.py \
+            -r requirements.json \
+            -s expected_structure.json \
+            -o test_cases.json
+
+      # Task 3 & 4: Verification with forensic logging
+      - name: Run Verification (verify.py)
+        run: python scripts/verify.py
+
+      # Task 3 & 4: Validation with forensic logging
+      - name: Run Validation (validate.py)
+        run: python scripts/validate.py
+
+      # Upload forensic log and V&V report as CI artifacts
+      - name: Upload forensic log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: forensic-log
+          path: forensic.log
+
+      - name: Upload V&V report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vv-report
+          path: vv_report.json
