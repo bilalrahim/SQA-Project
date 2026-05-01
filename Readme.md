@@ -114,7 +114,7 @@ Every push and PR to `main` triggers the [V&V Pipeline](.github/workflows/vv_pip
 ## Team
 
 - Bilal Rahim
-- (add other team members)
+- Chris Bottcher
 
 ## Course
 
